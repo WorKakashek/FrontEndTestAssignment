@@ -1,0 +1,41 @@
+.header {
+    background-color: white;
+    margin: 0;
+    padding: 13px 0;
+
+    .header__content {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        @media (max-width: 530px) {
+            justify-content: flex-start;
+        }
+
+
+    }
+
+
+    .header__btns {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 530px) {
+            max-width: 104px;
+            max-height: 26px;
+            font-size: 1rem;
+        }
+    }
+
+    .header__logo {
+        @media (max-width: 530px) {
+            max-width: 104px;
+            max-height: 26px;
+            margin-right: 20px;
+        }
+    }
+
+
+}

@@ -1,0 +1,140 @@
+.formContainer {
+    text-align: center;
+
+    &__title {
+        font-size: 40px;
+        line-height: 40px;
+        color: #333;
+        margin-bottom: 55px;
+
+        @media (max-width: 530px) {
+            max-width: 360px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+
+
+
+        &__input {
+            width: 360px;
+            position: relative;
+            margin-bottom: 54px;
+
+            @media (max-width: 530px) {
+                max-width: 340px;
+            }
+        }
+    }
+
+    .form__radio-group {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 380px;
+
+        @media (max-width: 530px) {
+            max-width: 340px;
+        }
+    }
+
+}
+
+.form__radio-group {
+    &__title {
+
+        font-size: 16px;
+        line-height: 24px;
+        color: #333;
+        margin: 0;
+        margin-bottom: 12px;
+    }
+
+    &__label {
+        margin-bottom: 10px;
+        display: flex;
+        gap: 13px;
+    }
+
+    &__input {
+        font-size: 16px;
+        line-height: 24px;
+        display: grid;
+        grid-template-columns: 1em auto;
+        gap: 0.5em;
+        color: #00BDD3 !important;
+        background-color: #00BDD3 !important;
+    }
+}
+
+.input__text {
+    border: 1px solid #D0CFCF;
+    border-radius: 7px;
+    width: 100%;
+    padding: 16px 16px;
+
+    @media (max-width: 530px) {
+        width: 300px;
+    }
+}
+
+.input__error {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: Nunito;
+}
+
+.input__phone {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    color: #7E7E7E;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    width: 380px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    @media (max-width: 530px) {
+        max-width: 340px;
+    }
+
+    .upload-button {
+        background-color: #fff;
+        border: 1px solid black;
+        padding: 15px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+    .file-input {
+        display: none;
+    }
+
+    .file-text {
+        color: #aaa;
+    }
+
+    .loading {
+        justify-content: center;
+    }
+}

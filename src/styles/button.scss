@@ -1,0 +1,30 @@
+.btn {
+    padding: 4px 23px;
+    outline: none;
+    border-radius: 100px;
+    border: none;
+    justify-content: space-between;
+    background-color: #F4E041;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 530px) {
+        width: fit-content;
+        max-height: 26px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    &:disabled {
+        background-color: #cccccc;
+        color: #ffffff;
+        cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
+        background-color: #FFE302;
+    }
+}
